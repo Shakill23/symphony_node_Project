@@ -34,7 +34,7 @@ const routes = [
   {
     path: '/reachUs',
     name: 'reachUs',
-    component: () => import('@/views/ReachUs.vue')
+    component: () => import('@/views/ContactView.vue')
   },
   {
     path: '/login',
