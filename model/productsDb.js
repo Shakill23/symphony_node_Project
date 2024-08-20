@@ -1,33 +1,33 @@
-import { pool } from "../config/config";
-import { config } from "dotenv";
-config()
+import { pool } from "../config/config.js";
+// import { config } from "dotenv";
+// config()
 
 const getProductsDb = async () => {
-    let [data] = pool.query('SELECT * FROM products')
+    let [data] = await pool.query('SELECT * FROM products')
     return data
 }
 
-const getProductDb = async () => {
-    let [[data]] =  await pool.query('SELECT * FROM products WHERE record_id = ?' [id])
+const getProductDb = async (id) => {
+    let [[data]] =  await pool.query('SELECT * FROM products WHERE productID = ?',[id])
     return data
 }
 
-const addProductDb = async (fruit_name, weight, amount) => {
-    let [data] = await pool.query(`INSERT INTO products (instrument_id, instrumentName, quantity, instrument_price, colorCategory, description, instrument_url) VALUES(?,?,?,?,?,?,?) `,
-    [instrument_id, instrumentName, quantity, instrument_price, colorCategory, description, instrument_url]  
-    )
-    
+
+const addProductDb = async (productName, quantity, amount, category_color, description, productURL) => {
+    let [data] = await pool.query(`INSERT INTO products (productName, quantity, amount, category_color, description, productURL) VALUES(?,?,?,?,?,?) `,
+    [productName, quantity, amount, category_color, description, productURL]  
+    )   
 }
 
 const deleteProductDb = async(id) => {
     let [data] = await pool.query(
-        `DELETE FROM products WHERE instrument_id = ?`, [id] 
+        `DELETE FROM products WHERE productID = ?`, [id] 
     )
 };
 
-const updateProductDb = async(instrument_id, instrumentName, quantity, instrument_price, colorCategory, description, instrument_url) => {
+const updateProductDb = async(productID, productName, quantity, amount, category_color, description, productURL) => {
     await pool.query(
-        `UPDATE fruits SET instrumentName = ?, quantity = ?, instrument_price = ?, colorCategory = ?, description = ?, instrument_url =?`, [instrument_id, instrumentName, quantity, instrument_price, colorCategory, description, instrument_url] 
+        `UPDATE products SET productID =?, productName=?, quantity=?, amount=?, category_color=?, description=?, productURL=?`, [productID, productName, quantity, amount, category_color, description, productURL] 
     )
 };
 
@@ -37,4 +37,4 @@ const updateProductDb = async(instrument_id, instrumentName, quantity, instrumen
 // }
 
 
-export {getProductsDb, getProductDb,addProductDb,deleteProductDb, updateRecordDb,updateProductDb}
+export {getProductsDb, getProductDb,addProductDb,deleteProductDb,updateProductDb}
