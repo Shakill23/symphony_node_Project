@@ -3,9 +3,9 @@ import express from 'express'
 
 const router = express.Router()
 
-router.get('/getProducts', getProducts)
+router.get('/', getProducts)
 
-router.get('/getProduct/:id', getProduct)
+router.get('/:id', getProduct)
 
 router.post('/addProduct', addProduct)
 
