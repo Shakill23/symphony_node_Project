@@ -3,12 +3,10 @@ import axios from 'axios'
 import { toast } from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 import router from '@/router'
-import { applyToken } from '@/service/AuthenticatedUser.js'
 import { useCookies } from 'vue3-cookies'
 const { cookies } = useCookies()
-const apiURL = 'https://eshop-8x2p.onrender.com/'
-// Should you reload the page after logging in
-applyToken(cookies.get('LegitUser')?.token)
+const apiURL = 'https://symphony-node-project-1.onrender.com/'
+
 export default createStore({
   state: {
     users: null,
@@ -41,7 +39,8 @@ export default createStore({
     // ==== User ========
     async fetchUsers(context) {
       try {
-        const { results, msg } = await (await axios.get(`${apiURL}user`)).data
+        const { msg } = await (await axios.get(`${apiURL}users`)).data
+        const results = await (await axios.get(`${apiURL}users`)).data
         if (results) {
           context.commit('setUsers', results)
         } else {
@@ -59,7 +58,8 @@ export default createStore({
     },
     async fetchUser(context, id) {
       try {
-        const { result, msg } = await (await axios.get(`${apiURL}user/${id}`)).data
+        const { msg } = await (await axios.get(`${apiURL}users/${id}`)).data
+        const result = await (await axios.get(`${apiURL}users/${id}`)).data
         if (result) {
           context.commit('setUser', result)
         } else {
@@ -77,7 +77,7 @@ export default createStore({
     },
     async register(context, payload) {
       try {
-        const { msg, err, token } = await (await axios.post(`${apiURL}user/register`, payload)).data
+        const { msg, err, token } = await (await axios.post(`${apiURL}users/register`, payload)).data
         if (token) {
           context.dispatch('fetchUsers')
           toast.success(`${msg}`, {
@@ -100,7 +100,7 @@ export default createStore({
     },
     async updateUser(context, payload) {
       try {
-        const { msg, err } = await (await axios.patch(`${apiURL}user/${payload.userID}`, payload)).data
+        const { msg, err } = await (await axios.patch(`${apiURL}users/${payload.userID}`, payload)).data
         if (msg) {
           context.dispatch('fetchUsers')
         } else {
@@ -118,7 +118,7 @@ export default createStore({
     },
     async deleteUser(context, id) {
       try {
-        const { msg, err } = await (await axios.delete(`${apiURL}user/${id}`)).data
+        const { msg, err } = await (await axios.delete(`${apiURL}users/${id}`)).data
         if (msg) {
           context.dispatch('fetchUsers')
         } else {
@@ -138,7 +138,8 @@ export default createStore({
     async login(context, payload) {
       try {
         console.log(payload);
-        const { msg, result, token } = await (await axios.post(`${apiURL}user/login`, payload)).data
+        const { msg, token } = await (await axios.post(`${apiURL}users/login`, payload)).data
+        const result = await (await axios.post(`${apiURL}users/login`, payload)).data
 
         if (result) {
           toast.success(`${msg}😎`, {
@@ -150,7 +151,6 @@ export default createStore({
             result
           })
           cookies.set('LegitUser', { token, msg, result })
-          applyToken(token)
           router.push({ name: 'products' })
         } else {
           toast.error(`${msg}`, {
@@ -169,8 +169,10 @@ export default createStore({
     // ==== Product =====
     async fetchProducts(context) {
       try {
-        const { results } = await (await axios.get(`${apiURL}product`)).data
+        const  results = await (await axios.get(`${apiURL}products`)).data
+        // console.log(results);
         if (results) {
+          
           context.commit('setProducts', results)
         } else {
           router.push({ name: 'login' })
@@ -185,7 +187,8 @@ export default createStore({
     },
     async recentProducts(context) {
       try {
-        const { results, msg } = await (await axios.get(`${apiURL}product/recent`)).data
+        const { msg } = await (await axios.get(`${apiURL}product/recent`)).data
+        const results = await (await axios.get(`${apiURL}product/recent`)).data
         if (results) {
           context.commit('setRecentProducts', results)
         } else {
@@ -203,7 +206,8 @@ export default createStore({
     },
     async fetchProduct(context, id) {
       try {
-        const { result, msg } = await (await axios.get(`${apiURL}product/${id}`)).data
+        const {msg}   = await (await axios.get(`${apiURL}product/${id}`)).data
+        const result  = await (await axios.get(`${apiURL}product/${id}`)).data
         if (result) {
           context.commit('setProduct', result)
         } else {

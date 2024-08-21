@@ -22,9 +22,9 @@ const routes = [
     component: () => import('@/views/ProductDetails.vue')
   },
   {
-    path: '/checkout',
-    name: 'checkout',
-    component: () => import('@/views/CheckoutView.vue')
+    path: '/news',
+    name: 'news',
+    component: () => import('@/views/NewsView.vue')
   },
   {
     path: '/admin',
@@ -32,19 +32,9 @@ const routes = [
     component: () => import('@/views/AdminView.vue')
   },
   {
-    path: '/reachUs',
-    name: 'reachUs',
+    path: '/contact',
+    name: 'contact',
     component: () => import('@/views/ContactView.vue')
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/LoginView.vue')
-  },
-  {
-    path: '/logout',
-    name: 'logout',
-    component: () => import('@/views/LoginView.vue')
   },
   {
     path: '/signup',

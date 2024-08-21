@@ -6,17 +6,15 @@
         <div class="row gap-2 justify-content-center my-2" v-if="products">
             <Card v-for="product in products" :key="product.productID">
                 <template #cardHeader>
-                    {{ product.productURL }}
-                    <img :src="product.prodURL" loading="lazy" class="img-fluid" :alt="product.prodName">
+                    <img :src="product.productURL" loading="lazy" class="img-fluid" :alt="product.productName">
                 </template>
                 <template #cardBody>
-                    <h5 class="card-title fw-bold">{{ product.prodName }}</h5>
+                    <h5 class="card-title fw-bold">{{ product.productName }}</h5>
                     <p class="lead"><span class="text-success fw-bold">Amount</span>: R{{ product.amount }}</p>
                     <div class="button-wrapper d-md-flex d-block justify-content-between">
                         <router-link :to="{ name: 'product', params: { id: product.productID } }">
                             <button class="btn btn-success">View</button>
                         </router-link>
-                        <button class="btn btn-dark">Cart</button>
                     </div>
                 </template>
             </Card>
