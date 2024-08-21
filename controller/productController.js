@@ -2,18 +2,38 @@ import {getProductsDb, getProductDb,addProductDb,deleteProductDb,updateProductDb
 
 
 const getProducts = async (req, res) => {
-    res.json(await getProductsDb());
-}
+    try {
+        const products = await getProductsDb();
+        res.json(products);
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        res.status(500).json({ message: 'Failed to retrieve products' });
+    }
+};
 
-const getProduct= async(req,res) => {
-    console.log(req.params.id);
-    res.json(await getProductDb(req.params.id))
-}
+
+const getProduct = async (req, res) => {
+    try {
+        const productId = req.params.id;
+        console.log(productId);
+        const product = await getProductDb(productId);
+        res.json(product);
+    } catch (error) {
+        console.error("Error fetching product:", error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+};
+
 
 const addProduct= async(req, res) => {
-    let {productName, quantity, amount, category_color, description, productURL} = req.body;
+    try {let {productName, quantity, amount, category_color, description, productURL} = req.body;
     await addProductDb(productName, quantity, amount, category_color, description, productURL);
     res.send('New product was inserted successfully')
+    }
+    catch (error) {
+        console.error("Error adding product:", error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
 }
 
 

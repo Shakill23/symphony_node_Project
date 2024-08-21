@@ -39,7 +39,7 @@ const updateUser= async (req,res) => {
     res.send('Update was successful');
 }
 
-const loginUser = (req, res) => {
+const loginUser = async (req, res) => {
     res.json({
         message: 'You have signed in successfully!', 
         token: req.body.token

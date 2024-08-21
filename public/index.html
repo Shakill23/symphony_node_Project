@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>API Documentation</h1>
+        <h3>Home</h3>
+
+        <style>
+            table{
+                margin: auto;
+                border: 3px solid green;
+                border-collapse: collapse;
+                background-color: white;
+            }
+            h1,h2,h3{
+                text-align: center;
+                text-decoration:underline #E4A84C;
+            }
+        </style>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>HTTP Methods</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/</td>
+                    <td>Home page</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Users</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <td>HTTP Methods</td>
+                    <td>Path</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/user</td>
+                    <td>Retrieves all users from the database</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/user/:id</td>
+                    <td>Retrieves a user using the user's ID (userID)</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/user/Signup </td>
+                    <td>Signs up/Adds a new user to the database</td>
+                </tr>
+                <tr>
+                    <td>PATCH/PUT</td>
+                    <td>/user/update/:id</td>
+                    <td>Updates/Edits/Alters user's details by ID (userID)</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>/user/delete/:id</td>
+                    <td>Deletes a user by their ID (userID)</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/user/login/:id</td>
+                    <td>Logs a user in using their email (emailAdd)</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Products</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>HTTP Methods</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/product</td>
+                    <td>Retrieves all products from the database</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/product/:id</td>
+                    <td>Retrieves a product using the product's ID (productID)</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/product/add</td>
+                    <td>Add a new product to the database</td>
+                </tr>
+                <tr>
+                    <td>PATCH</td>
+                    <td>/product/update/:id</td>
+                    <td>Update/Edits/Alters product's details by using it's ID (productID)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    
+</body>
+</html>
+
+
+
+
+        
