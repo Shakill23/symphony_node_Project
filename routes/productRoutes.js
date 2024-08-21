@@ -9,8 +9,8 @@ router.get('/:id', getProduct)
 
 router.post('/addProduct', addProduct)
 
-router.delete('/:id',deleteProduct)
+router.delete('/delete/:id',deleteProduct)
 
-router.patch(':/id', updateProduct)
+router.patch('/update/:id', updateProduct)
 
 export{router}
