@@ -60,7 +60,7 @@
                 </tr>
                 <tr>
                     <td>POST</td>
-                    <td>/users/Signup </td>
+                    <td>/users/register </td>
                     <td>Signs up/Adds a new user to the database</td>
                 </tr>
                 <tr>
@@ -102,13 +102,18 @@
                 </tr>
                 <tr>
                     <td>POST</td>
-                    <td>/products/add</td>
+                    <td>/products/addProduct</td>
                     <td>Add a new product to the database</td>
                 </tr>
                 <tr>
                     <td>PATCH</td>
                     <td>/products/update/:id</td>
                     <td>Update/Edits/Alters product's details by using it's ID (productID)</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>/products/delete/:id</td>
+                    <td>Deletes product's details by using it's ID (productID)</td>
                 </tr>
             </tbody>
         </table>
