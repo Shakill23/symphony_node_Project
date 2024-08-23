@@ -99,39 +99,44 @@ const addUser = async (req, res) => {
 };
 
 
-// const deleteUser= async(req,res) => {
-//     let {id} = req.body
-//     await deleteUserDb(req.params.id)
-//     res.send('User was deleted successfully')
-// }
-
 const deleteUser = async (req, res) => {
     try {
-        const { id } = req.body;
-
-        // Validate the provided ID
-        if (!id || isNaN(id)) {
-            return res.status(400).json({ message: "Invalid or missing User ID" });
-        }
-
-        // Attempt to delete the user from the database
-        // const result = await deleteUserDb(id);
-        const result = await deleteUserDb(+req.params.id);
-
-        if (result.affectedRows === 0) {
-            // No rows affected, meaning the user wasn't found
-            return res.status(404).json({ message: "User not found" });
-        }
-
-        // User deleted successfully
-        res.status(200).json({ message: "User was deleted successfully" });
+        let { id } = req.body;
+        await deleteUserDb(req.params.id);
+        res.status(200).send('User was deleted successfully');
     } catch (error) {
-        console.error("Error deleting user:", error);
-
-        // Handle server-side errors
-        res.status(500).json({ message: "Internal Server Error" });
+        res.status(500).send({ error: 'An error occurred while deleting the user.' });
     }
 };
+
+
+// const deleteUser = async (req, res) => {
+//     try {
+//         const { id } = req.body;
+
+//         // Validate the provided ID
+//         if (!id || isNaN(id)) {
+//             return res.status(400).json({ message: "Invalid or missing User ID" });
+//         }
+
+//         // Attempt to delete the user from the database
+//         const result = await deleteUserDb(id);
+//         // const result = await deleteUserDb(req.params.id);
+
+//         if (result.affectedRows === 0) {
+//             // No rows affected, meaning the user wasn't found
+//             return res.status(404).json({ message: "User not found" });
+//         }
+
+//         // User deleted successfully
+//         res.status(200).json({ message: "User was deleted successfully" });
+//     } catch (error) {
+//         console.error("Error deleting user:", error);
+
+//         // Handle server-side errors
+//         res.status(500).json({ message: "Internal Server Error" });
+//     }
+// };
 
 
 // const updateUser= async (req,res) => {
