@@ -115,7 +115,8 @@ const deleteUser = async (req, res) => {
         }
 
         // Attempt to delete the user from the database
-        const result = await deleteUserDb(id);
+        // const result = await deleteUserDb(id);
+        const result = await deleteUserDb(req.params.id);
 
         if (result.affectedRows === 0) {
             // No rows affected, meaning the user wasn't found
