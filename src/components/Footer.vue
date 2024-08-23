@@ -36,7 +36,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <p class="lead">
-              Symphony &copy; <span>{{ cYear }}</span>
+              Symphony &copy; <span>{{ cYear }}</span> By Chandre Leigh Davids & Shakeel Davids
             </p>
           </div>
         </div>
