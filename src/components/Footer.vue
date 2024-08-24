@@ -5,22 +5,22 @@
           <div class="col col-4">
             <h4 id="h4-foooter">About Symphony</h4>
             <p id="p"><router-link class="nav-link" to="/about">Brand Story</router-link></p><br>
-            <p id="p"><router-link class="nav-link" to="/news">Symphony Community</router-link></p><br>
-            <p id="p"><router-link class="nav-link" to="/news">Discounts</router-link></p>
+            <p id="p"><router-link class="nav-link" to="/home">Symphony Community</router-link></p><br>
+            <p id="p"><router-link class="nav-link" to="/home">Discounts</router-link></p>
           </div>
           <div class="col col-4">
             <h4 id="h4-foooter">Customer Service</h4><br>
             <p id="p"><router-link class="nav-link" to="/about">FAQ</router-link></p><br>
             <p id="p"><router-link class="nav-link" to="/contact">Refunds</router-link></p><br>
-            <p id="p"><router-link class="nav-link" to="/news">Promotions</router-link></p><br>
+            <p id="p"><router-link class="nav-link" to="/home">Promotions</router-link></p><br>
             <p id="p"><router-link class="nav-link" to="/contact">Contact Us</router-link></p><br>
             <p id="p"><router-link class="nav-link" to="/about">Terms and Conditions</router-link></p><br>
-            <p id="p"><router-link class="nav-link" to="/news">Membership</router-link></p><br>
+            <p id="p"><router-link class="nav-link" to="/home">Membership</router-link></p><br>
           </div>
           <div class="col col-4">
             <h4 id="h4-foooter">News</h4><br>
-            <p id="p"><router-link class="nav-link" to="/news">News</router-link></p><br>
-            <p id="p"><router-link class="nav-link" to="/news">Partnerships</router-link></p><br>
+            <p id="p"><router-link class="nav-link" to="/home">News</router-link></p><br>
+            <p id="p"><router-link class="nav-link" to="/home">Partnerships</router-link></p><br>
             <div class="social-icons" id="i">
               <i class="bi bi-facebook"></i>
               <i class="bi bi-instagram"></i>

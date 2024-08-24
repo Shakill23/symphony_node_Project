@@ -20,9 +20,7 @@
             <li class="nav-item">
               <router-link class="nav-link" exact-active-class="active-link" to="/products">Products</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" exact-active-class="active-link" to="/news">News</router-link>
-            </li>
+
             <li class="nav-item">
               <router-link class="nav-link" exact-active-class="active-link" to="/admin">Admin</router-link>
             </li>

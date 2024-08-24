@@ -16,7 +16,7 @@
     </div>
 
     <!-- Title Section -->
-    <h2 class="brownDiv py-4">Symphony</h2>
+    <h2 class="brownDiv py-4 text-center">Symphony</h2>
 
     <!-- Advertisements Section -->
     <section>
@@ -56,8 +56,8 @@
       <div class="d-flex justify-content-center">
         <h1 class="mb-4">Best Sellers</h1>
       </div>
-      <div class="row mx-5">
-        <div class="col-md-3 mt-2">
+      <div class="row mx-1 mx-md-5">
+        <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
             <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-1.png" class="card-img-top" alt="...">
             <div class="card-footer">
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 mt-2">
+        <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
             <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-2.png" class="card-img-top" alt="...">
             <div class="card-footer">
@@ -73,7 +73,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 mt-2">
+        <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
             <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-3.png" class="card-img-top" alt="...">
             <div class="card-footer">
@@ -81,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 mt-2">
+        <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
             <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-4.png" class="card-img-top" alt="...">
             <div class="card-footer py-2">
@@ -92,48 +92,19 @@
       </div>
     </div>
 
-    <!-- Vera Favourites Section -->
+    <!-- Just In Section -->
     <div class="container">
       <div class="row pt-5 mt-5">
-        <h2>Chosen By VERA</h2>
-        <br>
+        <h2>Just in</h2>
       </div>
       <div class="row" id="container">
         <div class="slider-wrapper mx-2">
           <div class="image-list">
-            <img src="https://chany4.github.io/ecomWEB/images/crochets/result%20(2).png" alt="crochet item" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/heels/FlowerHeel.Front.png" alt="picture of heel" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/heels/red.heels1.front.png" alt="heels" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/leather/result%20(5).png" alt="leather bag" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/teddyBags/result%20(5).png" alt="teddy bag" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/leather/result%20(3).png" alt="leather bag" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/heels/white.heels1.back.png" alt="white heel" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/heels/black.heels1.worn.png" alt="black heel" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/teddyBags/result%20(6).png" alt="teddy bags" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/crochets/Crochet%20Patterns%20For%20Your%20New%20Bags%20(34%20Pics)%20(2).png" alt="crochet bag" class="image-item">
-            <img src="https://chany4.github.io/ecomWEB/images/backpacks/result%20(6).png" alt="backpack" class="image-item">
+            <img src="https://chany4.github.io/symphony-images/images/drumsred1.png" alt="crochet item" class="image-item">
+            <img src="https://chany4.github.io/symphony-images/images/drumsbrown1.png" alt="picture of heel" class="image-item">
+            <img src="https://chany4.github.io/symphony-images/images/guitar3.png" alt="heels" class="image-item">
+            <img src="https://chany4.github.io/symphony-images/images/guitar4.png" alt="leather bag" class="image-item">
           </div>
-        </div>
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Coming Soon Section -->
-    <div class="container mt-5">
-      <div class="row pt-4">
-        <h2>Coming Soon</h2>
-        <div class="col col-lg-4 py-3">
-          <img src="https://chany4.github.io/ecomWEB/images/coming%20soon/Wireframe%20-%201.png" alt="" id="img">
-        </div>
-        <div class="col col-lg-4 py-3">
-          <img src="https://chany4.github.io/ecomWEB/images/coming%20soon/Wireframe%20-%202.png" alt="" id="img">
-        </div>
-        <div class="col col-lg-4 py-3">
-          <img src="https://chany4.github.io/ecomWEB/images/coming%20soon/Wireframe%20-%203.png" alt="" id="img">
         </div>
       </div>
     </div>
@@ -141,53 +112,25 @@
     <!-- Aesthetic Break Section -->
     <div class="container mt-5">
       <div class="row pt-4">
-        <img src="https://chany4.github.io/ecomWEB/images/other/Desktop%20-%203.png" alt="picture">
-      </div>
-    </div>
-
-    <!-- Meet the Team Section -->
-    <div class="container mt-5">
-      <div class="row pt-4">
-        <h2>Meet The Team</h2>
-        <div class="col-md-6 mt-2">
-          <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/team/Jane.png" class="card-img-top" alt="Jane's Photo">
-            <div class="card-footer">
-              <h4>Jane Doe</h4>
-              <p>CEO & Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mt-2">
-          <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/team/John.png" class="card-img-top" alt="John's Photo">
-            <div class="card-footer">
-              <h4>John Smith</h4>
-              <p>Chief Designer</p>
-            </div>
-          </div>
-        </div>
+        <img src="https://chany4.github.io/ecomWEB/images/other/Desktop%20-%203.png" class="img-fluid" alt="picture">
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'HomeView',
-  components: {
- 
-  },
+  components: {},
   computed: {
     recentProducts() {
-      return this.$store.state.recentProducts
+      return this.$store.state.recentProducts;
     }
   },
   mounted() {
-    this.$store.dispatch('recentProducts')
+    this.$store.dispatch('recentProducts');
   }
-}
+};
 </script>
 
 <style scoped>
@@ -217,17 +160,18 @@ export default {
 }
 
 .carousel-inner img {
-  height: 500px;
+  height: 400px;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner img {
+    height: 500px;
+  }
 }
 
 .row {
   margin-top: 20px;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
 }
 
 .img-fluid {
@@ -236,155 +180,66 @@ p {
   border-radius: 5px;
 }
 
-#home{
-    background-image: linear-gradient(rgb(255, 207, 215),rgb(255, 226, 231),white);
+#home {
+  background-image: linear-gradient(rgb(255, 207, 215), rgb(255, 226, 231), white);
 }
-#bestSellers{
-    width: 263px;
-    height: 205px;
-    border-radius: 20px;
-    object-fit: contain;
+
+.card {
+  background-color: pink;
 }
-#homeWall{
-    margin-top:4%;
-}
-#best-sellers-image{
-    object-fit: contain;
-}
-#img{
-    object-fit: contain;
-    border-radius: 15px;
-}
-.card{
-    background-color: pink;
-}
-#img2{
-    object-fit: contain;
-    max-width: 100%;
-    height: 40%;
-}
-.col{
-    background-size: contain;
-}
-h2{
-    font-family: "Cinzel Decorative", serif;
+
+h2, h1 {
+  font-family: "Cinzel Decorative", serif;
   font-weight: 700;
-  font-style: normal;
 }
-h1{
-    font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
+
+.slider-wrapper .image-list {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  margin-top: 32px;
 }
-h5{
-    font-family: "Courgette", cursive;
-    font-weight: 400;
-    font-style: normal;
+
+.slider-wrapper .image-list .image-item {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
 }
-#carousel-inner{
-    background-color: white;
+
+#button-best-sellers {
+  width: 100%;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 10px;
+  border: none;
 }
-#customer-service{
-    height: 20%;
+
+#button-best-sellers:active {
+  background-color: white;
+  color: palevioletred;
 }
-#collaborations{
-    height: 20%;
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
 }
-.Delivery{
-    padding-top: 25px;
+
+img {
+  border-radius: 30px;
+  height: 250px;
+  width: 180px;
 }
-#customer-service:hover{
-    transform: scale(115%) ;
-    transition: .5s ease-in-out;
-}
-#collaborations:hover{
-    transform: scale(115%) ;
-    transition: .5s ease-in-out;
-}
-#deliveries:hover{
-    transform: scale(115%) ;
-    transition: .5s ease-in-out;
-}
-p{
-    text-align: left;
-}
-#h4-foooter{
-    text-align: left;
-}
-#carouselExampleIndicators{
-    margin-top: 20%;
-}
-#container{
-    max-width: 110%;
-    width: 105%;
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 30px;
-    background: #FFA8C7;
-    box-shadow: inset 20px 20px 35px #D98FA9,
-            inset -20px -20px 35px #FFC1E5;
-}
-.slider-wrapper .image-list{
-display: grid;
-gap: 18px;
-font-size: 0;
-margin-top: 32px;
-stroke-width: none;
-overflow-x: scroll;
-grid-template-columns: repeat(12, 1fr);
-}
-/* how to style scroll bar */
-.slider-wrapper .image-list .image-item{
-width: 200px;
-height: 300px;
-object-fit: cover;
-}
-#button-best-sellers{
-    width: 50%;
-    background-color: palevioletred;
-    color: white;
-    border-radius: 10px;
-    border: none;
-}
-#button-best-sellers:active{
-   width: 50%;
-    background-color:white;
-    color: palevioletred ;
-    border-radius: 8px;
-    border: none;
-}
-.flip-card {
-    background-color: transparent;
-    width: 300px;
+
+@media (max-width: 768px) {
+  .slider-wrapper .image-list .image-item {
+    width: 100px;
+    height: 150px;
+  }
+
+  .carousel-inner img {
     height: 300px;
-    perspective: 1000px;
   }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  .flip-card-back {
-    background-color: #2980B9;
-    color: white;
-    transform: rotateY(180deg);
-  }
+}
 </style>
