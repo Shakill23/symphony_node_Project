@@ -55,7 +55,7 @@
   
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link.active-link {
-    color: #006600; /* Highlight color */
+    color: #006600; /* Highlight color for active link */
     transform: scale(1.1);
   }
   
