@@ -36,7 +36,7 @@
                 <input type="text" class="form-control w-50 mx-auto" placeholder="Product Desc" v-model="payload.description">
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
                 <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Update</button>
               </div>
             </form>
