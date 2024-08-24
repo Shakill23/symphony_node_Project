@@ -126,7 +126,7 @@ export default createStore({
     async deleteUser(context, userID) {
       try {
           const response = await axios.delete(`${apiURL}users/delete/${userID}`);
-          console.log(response.data); // Log the entire response data to inspect its structure
+          console.log(response.data); // Log the entire response data to inspect  structure
   
           const { message, err } = response.data;
   
