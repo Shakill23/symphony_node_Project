@@ -18,38 +18,7 @@
     <!-- Title Section -->
     <h2 class="brownDiv py-4 text-center">Symphony</h2>
 
-    <!-- Advertisements Section -->
-    <section>
-      <div class="container-fluid mt-5 pt-2">
-        <div class="row" id="homeWall">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://chany4.github.io/ecomWEB/images/other/Desktop%20-%201.png" class="d-block w-100" alt="advert-1" usemap="#shop_Now_Advert">
-                <map name="shop_Now_Advert">
-                  <area shape="rect" coords="529,1009,107,808" href="/html/products.html" alt="Shop Now Image">
-                  <area shape="rect" coords="1260,912,758,474" href="/html/products.html" alt="green leather Bag">
-                </map>
-              </div>
-              <div class="carousel-item">
-                <img src="https://chany4.github.io/ecomWEB/images/other/Desktop%20-%202.png" class="d-block w-100" alt="advert-2">
-              </div>
-              <div class="carousel-item">
-                <img src="https://chany4.github.io/ecomWEB/images/about/Desktop%20-%206.png" class="d-block w-100" alt="advert-3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Best Sellers Section -->
     <div class="container mt-5">
@@ -59,7 +28,7 @@
       <div class="row mx-1 mx-md-5">
         <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-1.png" class="card-img-top" alt="...">
+            <img src="https://chany4.github.io/symphony-images/images/guitar4.png" class="card-img-top" alt="...">
             <div class="card-footer">
               <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
             </div>
@@ -67,7 +36,7 @@
         </div>
         <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-2.png" class="card-img-top" alt="...">
+            <img src="https://chany4.github.io/symphony-images/images/guitar3.png" class="card-img-top" alt="...">
             <div class="card-footer">
               <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
             </div>
@@ -75,7 +44,7 @@
         </div>
         <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-3.png" class="card-img-top" alt="...">
+            <img src="https://chany4.github.io/symphony-images/images/drumsbrown1.png" class="card-img-top" alt="...">
             <div class="card-footer">
               <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
             </div>
@@ -83,7 +52,7 @@
         </div>
         <div class="col-6 col-md-3 mt-2">
           <div class="card h-100">
-            <img src="https://chany4.github.io/ecomWEB/images/best%20sellers/best-4.png" class="card-img-top" alt="...">
+            <img src="https://chany4.github.io/symphony-images/images/drumsred1.png" class="card-img-top" alt="...">
             <div class="card-footer py-2">
               <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
             </div>
@@ -91,31 +60,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Just In Section -->
-    <div class="container">
-      <div class="row pt-5 mt-5">
-        <h2>Just in</h2>
-      </div>
-      <div class="row" id="container">
-        <div class="slider-wrapper mx-2">
-          <div class="image-list">
-            <img src="https://chany4.github.io/symphony-images/images/drumsred1.png" alt="crochet item" class="image-item">
-            <img src="https://chany4.github.io/symphony-images/images/drumsbrown1.png" alt="picture of heel" class="image-item">
-            <img src="https://chany4.github.io/symphony-images/images/guitar3.png" alt="heels" class="image-item">
-            <img src="https://chany4.github.io/symphony-images/images/guitar4.png" alt="leather bag" class="image-item">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Aesthetic Break Section -->
-    <div class="container mt-5">
-      <div class="row pt-4">
-        <img src="https://chany4.github.io/ecomWEB/images/other/Desktop%20-%203.png" class="img-fluid" alt="picture">
-      </div>
-    </div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -185,7 +130,7 @@ export default {
 }
 
 .card {
-  background-color: pink;
+  background-color: #E4A84C;
 }
 
 h2, h1 {
@@ -208,7 +153,7 @@ h2, h1 {
 
 #button-best-sellers {
   width: 100%;
-  background-color: palevioletred;
+  background-color: rgb(2, 38, 5);
   color: white;
   border-radius: 10px;
   border: none;
@@ -216,7 +161,7 @@ h2, h1 {
 
 #button-best-sellers:active {
   background-color: white;
-  color: palevioletred;
+  color: rgb(30, 212, 42);
 }
 
 #container {
