@@ -30,7 +30,7 @@
           <div class="card h-100">
             <img src="https://chany4.github.io/symphony-images/images/guitar4.png" class="card-img-top" alt="...">
             <div class="card-footer">
-              <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
+              <button id="button-best-sellers"><router-link class="nav-link" exact-active-class="active-link" to="/products">View</router-link></button>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
           <div class="card h-100">
             <img src="https://chany4.github.io/symphony-images/images/guitar3.png" class="card-img-top" alt="...">
             <div class="card-footer">
-              <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
+              <button id="button-best-sellers"><router-link class="nav-link" exact-active-class="active-link" to="/products">View</router-link></button>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
           <div class="card h-100">
             <img src="https://chany4.github.io/symphony-images/images/drumsbrown1.png" class="card-img-top" alt="...">
             <div class="card-footer">
-              <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
+              <button id="button-best-sellers"><router-link class="nav-link" exact-active-class="active-link" to="/products">View</router-link></button>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
           <div class="card h-100">
             <img src="https://chany4.github.io/symphony-images/images/drumsred1.png" class="card-img-top" alt="...">
             <div class="card-footer py-2">
-              <a href="/html/products.html"><button id="button-best-sellers">View</button></a>
+              <button id="button-best-sellers"><router-link class="nav-link" exact-active-class="active-link" to="/products">View</router-link></button>
             </div>
           </div>
         </div>
